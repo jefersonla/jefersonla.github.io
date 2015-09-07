@@ -1,0 +1,13 @@
+# Site settings
+title: The Lima's Notes
+email: jefersonlimaa@dcc.ufba.br
+description: > # this means to ignore newlines until "baseurl:"
+  Blog pessoal das minhas experiências como hacker, pesquisador, desenvolvedor e maluco.
+  Encontre aqui tudo sobre arduino, programação, hardware e linux.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jefersonlima.me" # the base hostname & protocol for your site
+twitter_username: jelimax
+github_username:  jefersonla
+
+# Build settings
+markdown: kramdown

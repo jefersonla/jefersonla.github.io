@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- System specifications name/language/charset -->
+	<title> The Lima's Notes </title>
+	<meta charset="utf-8" />
+	<meta name="language" content="English" />
+	<meta name="language" content="Portuguese" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ec0e0e">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styles/css-reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/default.css">
+	<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<!-- Some description of this site -->
+	<meta name="description" content="Blog pessoal, sobre tecnologia, hardware, programação e é claro pinguins" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="favicons/mstile-70x70.png" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="favicons/mstile-70x70.png" />
+
+	<!-- IMPORTANT THINGs THAT NEED TO BE FIXED! -->
+	<meta property="fb:admins" content="626993227409793" />
+	<meta property="og:description" content="..."/>
+	<meta name="twitter:title" content="..." />
+	<meta name="twitter:description" content="..." />
+
+	<style type="text/css" media="screen and (max-width: 600px)">
+		.menu-left, .menu-right{
+			visibility: hidden;
+		}
+	</style>
+
+	<style type="text/css" media="screen and (max-width: 860px)">
+		.menu-left, .menu-right{
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="head">
+			<a target="_blank" title="Home" href="/"> <img src="images/logo-small.png"> </a>
+
+			<ul class="menu-left">
+				<li> <a target="_blank" title="Página inicial" href="/">   					 Home	</a></li>
+				<li> <a target="_blank" title="Sobre mim" href="about.html">   				About	</a></li>
+				<li> <a target="_blank" title="Página de projetos" href="projects.html">   Projects	</a></li>
+			</ul>
+
+			<ul class="menu-right">
+				<li> <a target="_blank" title="Página do grupo de pesquisa que eu participo" href="http://wiser.dcc.ufba.br">  		WISER 	</a></li>
+				<li> <a target="_blank" title="Minha conta do Github" href="https://github.com/jefersonla">   GitHub	</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="conteudo">
+		<!-- Artigo -->
+		<div id="artigo" class="topico">
+			<div class="titulo">
+				<div class="titulo-topico">
+					<!-- Titulo -->
+					<h1>
+						Titulo Tópico
+					</h1>
+					<!-- Descrição -->
+					<h4>
+						Descricao do tópico...
+					</h4>
+				</div>
+				<div class="info-topico">
+					<!-- Autor -->
+					<img alt="Autor" src="images/w.png">
+					<div class="info-place">
+						<!-- Data e Autor -->
+						<p name="big">
+							<b> 22/05/2015 </b>
+							- Por Jeferson Lima
+						</p>
+						<!-- Categoria e Tags -->
+						<p name="small">
+							<b> Categorias </b>
+							<i> xx </i>
+						</p>
+						<p name="small">
+							<b> Tags </b>
+							<i> yy, yy, yy </i>
+						</p>
+					</div>
+				</div>
+			</div>
+			<article>
+				<p class="images">
+					<img alt="logo-test" title="Imagem de teste" src="images/test.png"> <br />
+					<strong> Isto é uma legenda... eu acho... </strong>
+				</p>
+				<p>
+					<span></span> Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!! Tu du du pááá! Eu gostchu muitchu, heinn! danadinha! Mainhaa! Agora use meu lorem ipsum ordinária!!! Olha o quibeee! rema, rema, ordinária!.
+				</p>
+				<p>
+					<span></span> Você usa o Lorem Ipsum tradicional? Sabe de nada inocente!! Conheça meu lorem que é Tchan, Tchan, Tchannn!! Txu Txu Tu Paaaaa!! Vem, vem ordinária!! Venha provar do meu dendê que você não vai se arrepender. Só na sacanageeem!! Eu gostchu muitchu, heinn! Eitchaaa template cheio de abundância danadaaa!! Assim você mata o papai hein!? Etâaaa Mainhaaaaa...me abusa nesse seu layout, me gera, me geraaaa ordinária!!! Só na sacanagem!!!! Venha provar do meu dendê Tu du du pááá!.
+				</p>
+				<p>
+					<span></span> Mas que abundância meu irmãooo!!! Esse é seu Layout danadaaa!??? Sabe de nada inocente!! Vem, vem, vem ordinária, provar do meu dendê!! Eu gostxuu muitxuu desse seu Layout!! Etâ danadaaaa!! Tá tão lindo que vou falar em inglês só pra você mainhaaa!! Know nothing innocent. Ordinary!! Txhann Txhann, Txu txu tu paaa!! Damned. Only in Slutty!! Abundance that my borther!! Tchan, Tchan, Tchan...Tu tu tu pa!!!!  .
+				</p>
+				<p>
+					<span></span> Chama, Chama, Chama ordinária!!!! Tu du du pááá! rema, rema, ordinária! olha o quibe! eu gostchu muitchu, heinn! ordinária!! Domingo ela não vai. Tchannn!! Tchannn!! danadinha! Mainhaa! Eiiitaaa Mainhaaa!! Assim você mata o papai , viuu!! Danadaa!! Vem, vem ordinária!! Ahh mainhaa!! venha provar do meu dendê. Só na sacanageeem!! Sabe de nada inocente! que abundânciaaaa meu irmão!! Pau que nasce torto, Nunca se endireita....
+				</p>
+				<p>Um abraço,</p>
+				<p>Jeferson&nbsp;Lima</p>
+			</article>
+		</div>
+		<div class="sidebar">
+			<div class="item-sidebar">
+				GG
+			</div>
+			<div class="item-sidebar">
+				GG2
+			</div>
+		</div>
+	</div>
+	<!-- Menu -->
+	<!-- Rodapé -->
+	<footer>
+		<div id="footer" class="footer">
+			<div class="footer-social">
+				<div class="box-button">
+					<a href="https://facebook.com/jeferson.limax" target="_blank" title="Facebook">
+						<div class="social-button facebook">
+							<i class="fa fa-facebook"></i>
+						</div>
+					</a>
+				</div>
+				<div class="box-button">
+					<a href="http://google.com/+JefersonLimaAlmeida" target="_blank" title="Google Plus">
+						<div class="social-button google-plus">
+							<i class="fa fa-google-plus"></i>
+						</div>
+					</a>
+				</div>
+				<div class="box-button">
+					<a href="mailto:jefersonlimaa@dcc.ufba.br?Subject=[Contato%20Website] " rel="publisher" target="_top" title="E-mail">
+						<div class="social-button email">
+							<i class="fa fa-envelope-o"></i>
+						</div>
+					</a>
+				</div>
+				<div class="box-button">
+					<a href="https://github.com/jefersonla" target="_blank" title="Github">
+						<div class="social-button github">
+							<i class="fa fa-github"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+			<p>
+				Created By Jeferson Lima <br />
+				A member of the Wiser Research Group UFBA,<br />
+				student of Computer Science and fan of penguins 
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

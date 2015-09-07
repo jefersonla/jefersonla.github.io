@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<!-- Artigo -->
+<div id="artigo" class="topico">
+	<div class="titulo">
+		<div class="titulo-topico">
+			<!-- Titulo -->
+			<h1>
+				Titulo Tópico
+			</h1>
+			<!-- Descrição -->
+			<h4>
+				Descricao do tópico...
+			</h4>
+		</div>
+		<div class="info-topico">
+			<!-- Autor -->
+			<!-- <img alt="Autor" src="images/w.png"> -->
+			<div class="info-place">
+				<!-- Data e Autor -->
+				<p name="big">
+					<b> 22/05/2015 </b>
+					- Por Jeferson Lima
+				</p>
+				<!-- Categoria e Tags -->
+				<p name="small">
+					<b> Categorias </b>
+					<i> xx </i>
+				</p>
+				<p name="small">
+					<b> Tags </b>
+					<i> yy, yy, yy </i>
+				</p>
+			</div>
+		</div>
+	</div>
+	<article>
+		{{ content }}
+	</article>
+
+	{% include comments.html %}
+
+</div>
+
+{% include sidebar.html %}
