@@ -2,7 +2,7 @@
 /*
     Version = 1.0
     Country = Brazil
-    Git     = jefersonlima
+    Git     = jefersonla
     License = MIT License
 */
 
@@ -12,9 +12,9 @@ html, body{
 }
 
 .head, .center, .footer{
-    margin: 0 auto;
-    width: 1150px;
+    margin: 0px auto;
     max-width: 90%;
+    min-width: 833px;
 }
 
 /* Header */
@@ -70,15 +70,22 @@ header{
     padding-left: 5px;
 }
 
+.comments{
+    margin: 0 10px;
+}
+
+.comments h3{
+    margin: 0px 0px 5px;
+    font-family:  "Open Sans",Arial,sans-serif;
+    color: #6B6B6B;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #DADADA;
+    padding: 3px;
+}
+
 .conteudo{
-/*
-    height: 100%;
-    height: -webkit-calc(100% - 170px);
-    height: -moz-calc(100% - 170px);
-    height: calc(100% - 170px);
-*/
     width: 100%;
-    /*background: url("../images/bg-center.png");*/
 }
 
 .center{
@@ -91,25 +98,66 @@ header{
     width: calc((100%/5) * 4.7);
 }
 
-.topico{
-    padding-top: 20px;
-    margin-left: 5%;
+.topic-area{
     width: 70%;
+    padding-top: 20px;
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
     display: inline-block;
-    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#author-bio{
+    background: #303030 none repeat scroll 0% 0%;
+    margin: 30px 0px;
+    overflow: hidden;
+    padding: 30px;
+    border-top: 5px solid #D71E24;
+}
+
+#author-bio img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+#author-bio h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    font-family:  "Open Sans",Arial,sans-serif;
+}
+
+#author-bio p{
+    margin-top: 5px;
+    color: white;
+    line-height: 1.5;
+    font-family:  "Open Sans",Arial,sans-serif;
 }
 
 #artigo article{
     width: 100%;
     float: left;
-    color: #727272;
-    font-family: Arial,Helvetica,sans-serif;  
+    color: #4D4E53;
+    font-family: "Open Sans",Arial,sans-serif;
+    letter-spacing: 0.01em;
+    word-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 #artigo article p{
-    line-height: 18px;
     margin-bottom: 23px;
     font-size: 100%;
+    text-align:justify;
+    padding: 0 15px; 
 } 
 
 #artigo article p span{
@@ -118,7 +166,7 @@ header{
 }
 
 .images{
-    text-align: center;
+    text-align: center !important;
 }
 
 .images strong{
@@ -128,9 +176,10 @@ header{
 }
 
 .titulo{
-    font-family: "Open Sans",sans-serif;
+    font-family:  "Open Sans",Arial,sans-serif;
     color: #6B6B6B;
     height: 70px;
+    padding-left: 15px;
 }
 
 .titulo-topico{
@@ -150,7 +199,7 @@ header{
 }
 
 .info-topico{
-    font-family: "Open Sans",sans-serif;
+    font-family:  "Open Sans",Arial,sans-serif;
     font-weight: 300;
     font-size: 15px;
     float: right;
@@ -188,18 +237,24 @@ header{
 }
 
 .sidebar{
-    float: right;
-    height: 100%;
-    margin-right: 5%;
-    width: 18%;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
     background-color: #F3F3F3;
+    width: 30%;
+    float: right;
 }
 
 .item-sidebar{
     border-bottom: 1px solid #E0E0E0;
     border-top: 1px solid #F9F9F9;
+    padding: 10px;
+}
+
+.topico{
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    background-color: #fafafa;
+    border-right: 1px solid #dadada;
 }
 
 footer{
@@ -210,7 +265,7 @@ footer{
 }
 
 .footer p{
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans",Arial,sans-serif;
     line-height: 1.3;
     padding-top: 40px;
     text-align: right;

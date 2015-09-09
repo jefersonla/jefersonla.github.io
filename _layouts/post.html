@@ -3,44 +3,61 @@ layout: default
 ---
 <!-- Artigo -->
 <div id="artigo" class="topico">
-	<div class="titulo">
-		<div class="titulo-topico">
-			<!-- Titulo -->
-			<h1>
-				Titulo Tópico
-			</h1>
-			<!-- Descrição -->
-			<h4>
-				Descricao do tópico...
-			</h4>
+	<div class="topic-area">
+		<div class="titulo">
+			<div class="titulo-topico">
+				<!-- Titulo -->
+				<h1>
+					{{ page.title }}
+				</h1>
+				<!-- Descrição -->
+				<h4>
+					{{ page.description }}
+				</h4>
+			</div>
+			<div class="info-topico">
+				<!-- Autor -->
+				<!-- <img alt="Autor" src="images/w.png"> -->
+				<div class="info-place">
+					<!-- Data e Autor -->
+					<p name="big">
+						<b> {{ page.data }} </b>
+						- Por Jeferson Lima
+					</p>
+					<!-- Categoria e Tags -->
+					<p name="small">
+						<b> Categorias </b>
+						<i> {{ page.categories }} </i>
+					</p>
+					<p name="small">
+						<b> Tags </b>
+						<i> {{ page.tags }} </i>
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="info-topico">
-			<!-- Autor -->
-			<!-- <img alt="Autor" src="images/w.png"> -->
-			<div class="info-place">
-				<!-- Data e Autor -->
-				<p name="big">
-					<b> 22/05/2015 </b>
-					- Por Jeferson Lima
-				</p>
-				<!-- Categoria e Tags -->
-				<p name="small">
-					<b> Categorias </b>
-					<i> xx </i>
-				</p>
-				<p name="small">
-					<b> Tags </b>
-					<i> yy, yy, yy </i>
+		<article>
+			{{ content }}
+		</article>
+		
+		<div id="author-bio">
+			<div>
+				<img alt="Autor" src="images/author.png">
+				<h1>
+					Jeferson Lima
+				</h1>
+				<p>
+					Entusiastas de embarcados, e estudante de Ciência da Computação, com grande conhecimento de hardware
+					e sistema operacionais. Atualmente pesquisador na Universidade Federal da Bahia no grupo de pesquisa
+					Wiser UFBA, foca seu estudo em pesquisa na emergente area da Internet das Coisas.  
 				</p>
 			</div>
 		</div>
-	</div>
-	<article>
-		{{ content }}
-	</article>
 
-	{% include comments.html %}
+		{% include comments.html %}
+
+	</div>
+
+	{% include sidebar.html %}
 
 </div>
-
-{% include sidebar.html %}
