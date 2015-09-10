@@ -71,7 +71,7 @@ header{
 }
 
 .comments{
-    margin: 0 10px;
+    margin: 0 15px 10px;
 }
 
 .comments h3{
@@ -99,7 +99,7 @@ header{
 }
 
 .topic-area{
-    width: 70%;
+    width: 75%;
     padding-top: 20px;
     border-left: 1px solid #DADADA;
     border-right: 1px solid #DADADA;
@@ -176,10 +176,13 @@ header{
 }
 
 .titulo{
-    font-family:  "Open Sans",Arial,sans-serif;
+    font-family: "Open Sans",Arial,sans-serif;
     color: #6B6B6B;
     height: 70px;
-    padding-left: 15px;
+    border-bottom: 5px solid #dadada;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .titulo-topico{
@@ -238,7 +241,7 @@ header{
 
 .sidebar{
     background-color: #F3F3F3;
-    width: 30%;
+    width: 25%;
     float: right;
 }
 
@@ -257,10 +260,17 @@ header{
     border-right: 1px solid #dadada;
 }
 
+#navigation{
+    height: 250px;
+    background: #666;
+    clear: both;
+    border-top: 3px solid red;
+}
+
 footer{
+    box-shadow: 0px 2px 6px #111;
     height: 111px;
     background: url("../images/noise.png") repeat scroll 0% 0% #333;
-    box-shadow: 0px 2px 6px #111 inset;
     clear: both;
 }
 
@@ -315,3 +325,28 @@ footer{
 .social-button:hover i {
     color: #FFF;
 }
+
+#jekyll-love{
+    background-color: #111;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+#jekyll-love p{
+    text-align: center;
+    font-family: "Open Sans",Arial,sans-serif;
+    color: #FFF;
+    font-size: 15px;
+}
+
+#jekyll-love a, #jekyll-love a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#jekyll-love a:hover, #jekyll-love a:active {
+    color: red;
+}
+
+
+
