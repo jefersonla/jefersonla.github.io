@@ -14,7 +14,7 @@ html, body{
 .head, .center, .footer{
     margin: 0px auto;
     max-width: 90%;
-    min-width: 833px;
+    /*min-width: 833px;*/
 }
 
 /* Header */
@@ -99,7 +99,9 @@ header{
 }
 
 .topic-area{
-    width: 75%;
+    width: -webkit-calc(100% - 312px);
+    width: -moz-calc(100% - 312px);
+    width: calc(100% - 312px);
     padding-top: 20px;
     border-left: 1px solid #DADADA;
     border-right: 1px solid #DADADA;
@@ -241,7 +243,7 @@ header{
 
 .sidebar{
     background-color: #F3F3F3;
-    width: 25%;
+    width: 312px;
     float: right;
 }
 
@@ -265,6 +267,27 @@ header{
     background: #666;
     clear: both;
     border-top: 3px solid red;
+}
+
+#anuncio{
+    background: url("../images/noise.png") repeat scroll 0% 0% #333;
+    padding: 0;
+    padding-bottom: 10px !important;
+}
+
+#anuncio div{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#anuncio h4{
+    margin: 0px 0px 5px;
+    font-family:  "Open Sans",Arial,sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 3px;
 }
 
 footer{
@@ -348,5 +371,82 @@ footer{
     color: red;
 }
 
+@media (max-width: 1150px){
+    .titulo-topico {
+        display: block;
+        float: none;
+        margin-bottom: 10px;
+    }
 
+    .titulo-topico h4{
+        display: none;
+    }
 
+    .info-topico{
+        display: block;
+        width: inherit;
+        float: none;
+    }
+
+    .info-place p[name="small"]{
+        display: inline-block;
+    }
+
+    .titulo{
+        height: inherit;
+    }
+}
+
+@media (max-width: 820px){
+    .footer-social{
+        float: none;
+        width: 333px;
+        margin: 0px auto;
+    }
+
+    #footer p{
+        display: none;
+    }
+}
+
+@media (max-width: 755px){
+    #author-bio{
+        text-align: center;
+    }
+
+    #author-bio img{
+        float: none;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 972px) and (max-width: 1150px){
+    .menu-right{
+        float: left;
+        margin: 15px 0 0 0;
+        padding-left: 5px;
+        border-left: none;
+    }
+}
+
+@media (max-width: 971px) and (min-width: 745px){
+    .topic-area{
+        width: 100%;
+       border-left: none;
+    }
+
+    .sidebar, .menu-right{
+        display: none;
+    }
+}
+
+@media (max-width: 744px){
+    .menu-left, .menu-right, .sidebar{
+        display: none;
+    }
+
+    .topic-area{
+        width: 100%;
+        border-left: none;
+    }
+}

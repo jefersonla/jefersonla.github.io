@@ -52,6 +52,27 @@ layout: default
 			</div>
 		</div>
 
+		{% if page.previous.url or page.next.url %}
+			<div class="followlinks-posts">
+				{% if page.next.url %}
+					<div id="next-post">
+						<a>
+							<img alt="Autor" src="images/author.png">
+							<p> this is the next post </p>
+						</a>
+					</div>
+				{% endif %}
+				{% if page.previous.url %}
+					<div id="prev-post">
+						<a>
+							<img alt="Autor" src="images/author.png">
+							<p> This is the previous post </p>
+						</a>
+					</div>
+				{% endif %}
+			</div>
+		{% endif %}
+
 		{% include comments.html %}
 
 	</div>
