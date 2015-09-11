@@ -498,7 +498,7 @@ footer{
     stroke: white !important;
 }
 
-@media (max-width: 744px){
+@media screen and (max-width: 757px), not screen and (max-width: 2000px){
     .menu-left, .menu-right, .sidebar{
         display: none;
     }
@@ -520,4 +520,43 @@ footer{
         width: 100%;
         border: none;
     }
+}
+
+@media print{
+    header, footer, #navigation, #jekyll-love, .comments  {
+        display: none;
+    }
+
+    #author-bio{
+        background-color: white;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+
+    #author-bio img{
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-right: 27px;
+    }
+
+    #author-bio h1{
+        font-size: 16px;
+    }
+
+    #author-bio p{
+        font-size: 12px;
+    }
+
+    #author-bio h1, #author-bio p{
+        color: black;
+    }
+
+    .topic-area{
+        padding: 25px 10px;
+    }
+}
+
+@page{
+    margin: 10px;
 }
