@@ -432,7 +432,7 @@ footer{
 @media (max-width: 971px) and (min-width: 745px){
     .topic-area{
         width: 100%;
-       border-left: none;
+        border-right: none;
     }
 
     .sidebar, .menu-right{
@@ -440,13 +440,84 @@ footer{
     }
 }
 
+
+#show-menu{
+    display: none;
+}
+
+.icon-menu {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 32px;
+    padding: 13px 5px;
+    transition: all 0.2s ease-out 0s;
+}
+
+.line {
+    transition: 0.4s;
+    stroke: #333;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    transform: rotate(0) translateY(0) translateX(0);
+}
+
+.line--1 {
+    transform-origin: 2px 2px; 
+    -webkit-transform-origin: left;
+}
+
+.line--3 {
+    transform-origin: 2px 14px;
+    -webkit-transform-origin: left;
+}
+
+.fecha{
+    transition: all 0.2s ease-out 0s;
+}
+
+.icon-menu:hover .line--2, .fecha .line--2 {
+    opacity: 0;
+}
+
+.icon-menu:hover .line--1, .fecha .line--1 {
+    transform: rotate(45deg) translateY(-2px) translateX(2px);
+    margin-right: 2px;
+}
+
+.icon-menu:hover .line--3 , .fecha .line--3 {
+    transform: rotate(-45deg) translateY(2px) translateX(2px);
+    margin-right: 2px;
+}
+
+.fecha {
+    background-color: #333;
+}
+
+.fecha .line{
+    stroke: white !important;
+}
+
 @media (max-width: 744px){
     .menu-left, .menu-right, .sidebar{
         display: none;
     }
 
-    .topic-area{
+    #show-menu{
+        display: inline-block;
+        float: right;
+    }
+
+    .head{
+        max-width: 95%;
+    }
+
+    .topico{
+        margin: 0;
+    }
+
+    .conteudo, .topic-area, .topico{
         width: 100%;
-        border-left: none;
+        border: none;
     }
 }
