@@ -28,6 +28,8 @@ header{
 .head img{
     padding-top: 5px;
     float: left;
+    max-width: -moz-calc(90% - 50px);
+    max-width: -webkit-calc(90% - 50px);
     max-width: calc(90% - 50px);
 }
 
@@ -96,7 +98,10 @@ header{
 .center img{
     margin: 5% 2% 0;
     vertical-align: middle;
+    width: -moz-calc((100%/5) * 4.7);
+    width: -webkit-calc((100%/5) * 4.7);
     width: calc((100%/5) * 4.7);
+
 }
 
 .topic-area{
@@ -318,6 +323,8 @@ footer{
     width: 80px;
     margin-top: 30px;
     float: left;
+    max-width: -moz-calc(100%/ 4);
+    max-width: -webkit-calc(100% / 4);
     max-width: calc(100% / 4);
 }
 
