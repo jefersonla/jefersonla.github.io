@@ -423,6 +423,7 @@ footer{
     #author-bio img{
         float: none;
         margin-right: 0;
+        margin-bottom: 15px;
     }
 }
 

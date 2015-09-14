@@ -7,7 +7,7 @@
 
 	<!-- Some non default visualization -->
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - Lima's Notes</title>
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="description" content="{{ site.description }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
@@ -26,9 +26,9 @@
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
 	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="{{ "styles/css-reset.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" type="text/css" href="{{ "styles/default.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" type="text/css" href="{{ "styles/font-awesome.min.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" type="text/css" href="{{ "/styles/css-reset.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" type="text/css" href="{{ "/styles/default.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" type="text/css" href="{{ "/styles/font-awesome.min.css" | prepend: site.baseurl }}">
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 	<!-- Some description of this site -->

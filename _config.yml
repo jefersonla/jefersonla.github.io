@@ -11,3 +11,6 @@ github_username:  jefersonla
 
 # Build settings
 markdown: kramdown
+
+# Make permalinks seems cool
+permalink: /posts/:categories/:year/:month/:day/:title
